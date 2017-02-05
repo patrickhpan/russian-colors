@@ -2,7 +2,7 @@ module.exports = [
 	{
 		test: /\.jsx?$/,
 		exclude: /(node_modules)/,
-		loaders: ['react-hot', 'babel?presets[]=es2015,presets[]=react']
+		loaders: ['react-hot', 'babel?presets[]=react,presets[]=es2015,presets[]=stage-1,plugins[]=transform-decorators-legacy,plugins[]=transform-class-properties']
 	},
 	{
 		test: /\.json$/,

@@ -1,11 +1,55 @@
 @import './constants.scss';
+@import './mixins.scss';
+@import './variables.scss';
 
-body {
-    background-color: $off-white;
-}
 #app-root {
     div#App {
-        background-color: $white;
-        padding: 100px;
+        position: absolute;
+        width: 100%;
+        min-height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+
+        @include grid($cols: 3, $rows: 4);
+
+        @media screen and (max-width: $breakpoint-lg) and (min-width: $breakpoint-sm) {
+            & {
+                @include grid($cols: 2, $rows: 6);
+                font-size: 0.7em;
+            }
+        }
+        @media screen and (max-width: $breakpoint-sm) {
+            & {
+                @include grid($cols: 1, $rows: 12);
+                font-size: 0.6em;
+            }
+        }
+    }
+}
+
+div.ColorBlock {
+    @include flex;
+    flex-wrap: wrap;
+
+    font-size: $block-font-size;
+    font-weight: $block-font-weight;
+
+    color: white;
+    cursor: pointer;
+
+    user-select: none;
+
+    > div {
+        opacity: 0;
+        transition: opacity $color-text-fade;
+    }
+
+    &:active, div#App.show-all & {
+        & > div {
+            opacity: 1;
+            transition: opacity 0s;
+        }
     }
 }

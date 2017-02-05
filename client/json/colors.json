@@ -1,0 +1,62 @@
+[
+    {
+        "en": "pink",
+        "ru": "ро́зовый",
+        "color": "f0b3cb"
+    },
+    {
+        "en": "red",
+        "ru": "кра́сный",
+        "color": "f2777a"
+    },
+    {
+        "en": "orange",
+        "ru": "ора́нжевый",
+        "color": "f99157"
+    },
+    {
+        "en": "yellow",
+        "ru": "жёлтый",
+        "color": "ffcc66"
+    },
+    {
+        "en": "green",
+        "ru": "зелёный",
+        "color": "99cc99"
+    },
+    {
+        "en": "sky blue",
+        "ru": "голубо́й",
+        "color": "79b8d5"
+    },
+    {
+        "en": "dark blue",
+        "ru": "си́ний",
+        "color": "668acc"
+    },
+    {
+        "en": "purple",
+        "ru": "фиоле́товый",
+        "color": "bb8ebd"
+    },
+    {
+        "en": "brown",
+        "ru": "кори́чневый",
+        "color": "836553"
+    },
+    {
+        "en": "grey",
+        "ru": "се́рый",
+        "color": "888888"
+    },
+    {
+        "en": "black",
+        "ru": "чёрный",
+        "color": "1d1f21"
+    },
+    {
+        "en": "white",
+        "ru": "бе́лый",
+        "color": "e3e3e3"
+    }
+]
